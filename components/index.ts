@@ -1,3 +1,5 @@
+import Slider from "./Slider";
 import TabBar from "./TabBar";
+import Toggle from "./Toggle";
 
-export { TabBar };
+export { Slider, TabBar, Toggle };

@@ -63,7 +63,7 @@ const TabBarButton = ({
         return <Feather name="user" size={24} color={colors} />;
       case "profile":
         return <Feather name="user" size={24} color={colors} />;
-      case "login":
+      case "(auth)/login":
         return <Feather name="log-in" size={24} color={colors} />;
       default:
         return null;

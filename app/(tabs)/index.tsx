@@ -1,15 +1,36 @@
-import { Text, View } from "react-native";
+import { Slider, Toggle } from "@/components";
+import { StyleSheet, Text, View } from "react-native";
 
-export default function Index() {
+const Index = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={styles.container}>
+      <View style={styles.sliderContainer}>
+        <Text>Slider</Text>
+        <Slider onChangeValue={() => {}} />
+      </View>
+      <View style={styles.toggleContainer}>
+        <Text>Toggle</Text>
+        <Toggle />
+      </View>
     </View>
   );
-}
+};
+
+export default Index;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+  },
+  sliderContainer: {
+    marginBottom: 16,
+    gap: 16,
+    justifyContent: "center",
+  },
+  toggleContainer: {
+    marginBottom: 16,
+    gap: 16,
+    justifyContent: "center",
+  },
+});
